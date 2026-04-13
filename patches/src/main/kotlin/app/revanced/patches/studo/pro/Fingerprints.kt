@@ -21,12 +21,16 @@ internal val BytecodePatchContext.restaurantLikePatch by gettingFirstMethodDecla
     )
 }
 
-internal val BytecodePatchContext.calendarSetColorPatch by gettingFirstMethodDeclaratively {
+internal val BytecodePatchContext.sendColorForUniEventPatch by gettingFirstMethodDeclaratively {
     definingClass("Lcom/moshbit/studo/home/calendar/CalendarAddFragment;")
-    name($$"onViewLazilyCreated$lambda$35")
+    name("sendColorForUniEventToBackendIfNecessary")
     returnType("V")
-    parameterTypes(
-        "Lcom/moshbit/studo/home/calendar/CalendarAddFragment;",
-        "Landroid/view/View;",
-    )
+    parameterTypes("Lcom/moshbit/studo/db/CalendarEvent;")
+}
+
+internal val BytecodePatchContext.sendColorForExternalEventPatch by gettingFirstMethodDeclaratively {
+    definingClass("Lcom/moshbit/studo/home/calendar/CalendarAddFragment;")
+    name("sendColorForExternalCalendarEventToBackendIfNecessary")
+    returnType("V")
+    parameterTypes("Lcom/moshbit/studo/db/CalendarEvent;")
 }

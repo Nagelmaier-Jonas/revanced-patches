@@ -39,19 +39,8 @@ val enableStudoProPatch = bytecodePatch(
             """.trimIndent()
         )
 
-        calendarSetColorPatch.addInstructions(
-            0,
-            """
-                sget-object p1, Lcom/moshbit/studo/util/DialogManager;->INSTANCE:Lcom/moshbit/studo/util/DialogManager;
-                invoke-virtual {p0}, Lcom/moshbit/studo/util/mb/MbFragment;->getMbActivity()Lcom/moshbit/studo/util/mb/MbActivity;
-                move-result-object p0
-                invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-                const/4 v0, 0x2
-                const/4 v1, 0x0
-                const/4 v2, 0x0
-                invoke-static {p1, p0, v2, v0, v1}, Lcom/moshbit/studo/util/DialogManager;->showGoProDialog${'$'}default(Lcom/moshbit/studo/util/DialogManager;Lcom/moshbit/studo/util/mb/MbActivity;IILjava/lang/Object;)Lcom/afollestad/materialdialogs/MaterialDialog;
-                return-void
-            """.trimIndent()
-        )
+        // Stub out color sync to backend — local color change still works
+        sendColorForUniEventPatch.addInstructions(0, "return-void")
+        sendColorForExternalEventPatch.addInstructions(0, "return-void")
     }
 }
