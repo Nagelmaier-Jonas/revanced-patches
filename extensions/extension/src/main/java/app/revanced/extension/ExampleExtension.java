@@ -1,4 +1,4 @@
-so now package app.revanced.extension;
+package app.revanced.extension;
 
 public class ExampleExtension {
     public static void get() {
