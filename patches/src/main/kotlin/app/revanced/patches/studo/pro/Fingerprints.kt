@@ -34,3 +34,15 @@ internal val BytecodePatchContext.sendColorForExternalEventPatch by gettingFirst
     returnType("V")
     parameterTypes("Lcom/moshbit/studo/db/CalendarEvent;")
 }
+
+// The color item click handler in CalendarAddFragment unconditionally shows a Go Pro dialog
+// because R8 eliminated the color picker branch as dead code (isPro() was always false).
+internal val BytecodePatchContext.colorItemClickPatch by gettingFirstMethodDeclaratively {
+    definingClass("Lcom/moshbit/studo/home/calendar/CalendarAddFragment;")
+    name($$"onViewLazilyCreated$lambda$35")
+    returnType("V")
+    parameterTypes(
+        "Lcom/moshbit/studo/home/calendar/CalendarAddFragment;",
+        "Landroid/view/View;",
+    )
+}

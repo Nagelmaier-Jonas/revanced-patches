@@ -11,6 +11,8 @@ val enableStudoProPatch = bytecodePatch(
     compatibleWith("com.moshbit.studo"("4.72.2"))
     // not yet confirmed working: Notification for new grades
 
+    extendWith("extensions/extension.rve")
+
     apply {
         settingsIsProPatch.addInstructions(
             0,
@@ -42,5 +44,15 @@ val enableStudoProPatch = bytecodePatch(
         // Stub out color sync to backend — local color change still works
         sendColorForUniEventPatch.addInstructions(0, "return-void")
         sendColorForExternalEventPatch.addInstructions(0, "return-void")
+
+        // The color item click handler shows a Go Pro dialog because R8 compiled out the
+        // color picker branch. Replace it with our extension that shows ColorPickerDialog directly.
+        colorItemClickPatch.addInstructions(
+            0,
+            """
+                invoke-static {p0}, Lapp/revanced/extension/studo/CalendarColorPickerHelper;->showColorPicker(Ljava/lang/Object;)V
+                return-void
+            """.trimIndent()
+        )
     }
 }
