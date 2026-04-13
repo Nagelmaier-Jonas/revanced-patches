@@ -1,3 +1,10 @@
+# [1.0.0-dev.3](https://github.com/Nagelmaier-Jonas/revanced-patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-04-13)
+
+
+### Features
+
+* fix date format in patches.json ([1219739](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/1219739c77b369ac366bb65905dcf7aef2405498))
+
 # [1.0.0-dev.2](https://github.com/Nagelmaier-Jonas/revanced-patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-04-13)
 
 
