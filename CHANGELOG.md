@@ -1,3 +1,10 @@
+# [1.0.0-dev.2](https://github.com/Nagelmaier-Jonas/revanced-patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-04-13)
+
+
+### Features
+
+* update author name in build.gradle.kts ([6f8c73c](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/6f8c73c1388d4180e4f11612872f674839529fea))
+
 # 1.0.0-dev.1 (2026-04-13)
 
 
