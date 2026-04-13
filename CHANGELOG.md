@@ -1,3 +1,15 @@
+# [1.0.0-dev.4](https://github.com/Nagelmaier-Jonas/revanced-patches/compare/v1.0.0-dev.3...v1.0.0-dev.4) (2026-04-13)
+
+
+### Bug Fixes
+
+* correct package declaration in ExampleExtension.java ([1072044](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/10720447cc9ae7e65a5ecc169d227a4e5e12720c))
+
+
+### Features
+
+* implement color picker dialog for calendar events and update patches.json version ([eddf2aa](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/eddf2aaee619873aeea783878ef3c022d76ce6a1))
+
 # [1.0.0-dev.3](https://github.com/Nagelmaier-Jonas/revanced-patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-04-13)
 
 
