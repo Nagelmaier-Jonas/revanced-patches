@@ -1,3 +1,23 @@
+# 1.0.0-dev.1 (2026-04-13)
+
+
+### Bug Fixes
+
+* Compile DEX without debugging information ([73f6506](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/73f6506bccc01e5622a6e19bedcf6d54d3f701c7))
+* **studo:** add compatible version ([06d6a00](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/06d6a00f76ac56219bfb06deaf3873924ed3e160))
+* Upload asset signature by fixing asset path glob pattern ([1378304](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/1378304809092e1f5a5c8fb4beb0964496222059))
+
+
+### Features
+
+* add patches.json for revanced-manager prerelease ([b1f4421](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/b1f4421df4b56e42605c7f875e54fc551cff953c))
+* Init ([66be625](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/66be625f25ee2d678dac62a5bf4daa631284f8f6))
+* stub out color sync to backend for calendar events ([791c0dd](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/791c0dde492f303513cb82e25e7c6748e4228acc))
+* **Studo:** add HideCookieConsent HidePromotionalNews HideStudoProExpired ([8f83201](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/8f83201db6184ef80c6800aefd35f8f7de28f41b))
+* **Studo:** add RemoveCalendarLimit ([c09d9bd](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/c09d9bd0cecb759f2781eddcfe8ac9ba34cad317))
+* **Studo:** replace RemoveCalendarLimit with EnableStudoPro ([806d4c7](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/806d4c78649f60c8ba1080ca822a9452c5e726b5))
+* **Studo:** simple HideAdsPatch; update repo meta stuff ([fa13256](https://github.com/Nagelmaier-Jonas/revanced-patches/commit/fa1325603c3a52f26b267320f9ffe390bc715bc6))
+
 # [1.0.0-dev.5](https://github.com/Vernoxvernax/revanced-patches/compare/v1.0.0-dev.4...v1.0.0-dev.5) (2026-03-09)
 
 
